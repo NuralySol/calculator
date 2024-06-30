@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculator Nuraly</title>
+</head>
+
+<body>
+    <!-- Calculator grid -->
+    <div class="calculator-grid">
+        <!-- Result screen -->
+        <section class="screen" id="result">0</section>
+
+        <!-- Calculator buttons -->
+        <section class="calc-buttons">
+            <!-- First row of buttons -->
+            <div class="calc-button-row">
+                <button class="double calc-button">C</button>
+                <button class="calc-button">&larr;</button>
+                <button class="calc-button">&divide;</button>
+            </div>
+
+            <!-- Second row of buttons -->
+            <div class="calc-button-row">
+                <button class="calc-button">7</button>
+                <button class="calc-button">8</button>
+                <button class="calc-button">9</button>
+                <button class="calc-button">&times;</button>
+            </div>
+        </section>
+
+        <!-- Third row of buttons -->
+        <div class="calc-button-row">
+            <button class="calc-button">4</button>
+            <button class="calc-button">5</button>
+            <button class="calc-button">6</button>
+            <button class="calc-button">&minus;</button>
+        </div>
+
+        <!-- Fourth row of buttons -->
+        <div class="calc-button-row">
+            <button class="calc-button">1</button>
+            <button class="calc-button">2</button>
+            <button class="calc-button">3</button>
+            <button class="calc-button">&plus;</button>
+        </div>
+        
+        <!-- Fifth row of buttons -->
+        <div class="calc-button-row">
+            <button class="triple calc-button">0</button>
+            <button id="exit-button" class="exit">EXIT</button>
+            <button id="equal-button" class="equal">=</button>   
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

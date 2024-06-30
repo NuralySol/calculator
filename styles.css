@@ -1,0 +1,173 @@
+/* Set box-sizing and height for the html element */
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+/* Reset box-sizing, margin, and padding for all elements */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the body element */
+body {
+    align-items: center;
+    background: linear-gradient(320deg, #b83576, #d4c65c, #2fdbb8);
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+
+/* Style the calculator grid container */
+.calculator-grid {
+    -webkit-backdrop-filter: blur(5.5px);
+    /* Apply backdrop filter with blur */
+    backdrop-filter: blur(5.5px);
+    /* Apply backdrop filter with blur */
+    border-radius: 16px;
+    /* Set border radius */
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    /* Add box shadow */
+    color: #050505;
+    /* Set text color */
+    background: rgba(255, 255, 255, 0.30);
+    /* Set background color */
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    /* Set border */
+    flex-basis: 400px;
+    /* Set initial flex basis */
+    height: 540px;
+    /* Set height */
+    padding: 22px 35px;
+    /* Set padding */
+}
+
+/* Style the calculator screen */
+.screen {
+    background-color: blur(5.5px);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(247, 246, 243, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 1px 4px 30px rgba(35, 35, 35, 0.1);
+    color: #000308;
+    font-size: 45px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 326px;
+}
+
+/* Style the rows of calculator buttons */
+.calc-button-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+/* Style the calculator buttons */
+.calc-button {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #0e0d0d;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 65px;
+    backdrop-filter: blur(5.5px);
+}
+
+/* Style the exit button */
+.exit {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #df1818;
+    flex-basis: 47%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    height: 65px;
+}
+
+.equal {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(0, 113, 251, 0.633);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #ffffff;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 26px;
+    height: 65px;
+    backdrop-filter: blur(5.5px);
+}
+
+/* Style the last calculator button */
+.calc-button:last-child {
+    -webkit-backdrop-filter: blur(5.5px);
+    backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #ffffff;
+    background: hotpink;
+}
+
+/* Style the hover effect for the last calculator button */
+.calc-button:last-child:hover {
+    background-color: inherit;
+    color: inherit;
+}
+.exit:hover {
+    background-color: inherit;
+    color: #df1818;
+}
+.equal:hover {
+    background-color: inherit;
+    color: #ffffff;
+}
+.equal:active {
+    background-color: #00640f;
+}
+/* Style the hover effect for calculator buttons */
+.calc-button:hover {
+    background-color: inherit;
+}
+
+/* Style the active state for calculator buttons */
+.calc-button:active {
+    background-color: #ffef78;
+}
+
+/* Style the double width calculator button */
+.double {
+    flex-basis: 47%;
+    font-size: 45px;
+    font-style:oblique;
+    font-weight: 900;;
+}
+.double:active {
+    background-color: #ffef78;
+}
+/* Style the triple width calculator button */
+.triple {
+    flex-basis: 73;
+}
