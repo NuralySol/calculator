@@ -31,6 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 window.location.href = 'https://www.youtube.com/watch?v=vGJTaP6anOU'; // Redirects to the specified URL if 666 is entered
                 return;
             }
+            if (currentInput === '312') {
+                window.location.href = 'https://www.youtube.com/watch?v=bRPVQaTfXU4'; // Redirects to the specified URL if 666 is entered
+                return;
+            }
             if (buttonValue >= '0' && buttonValue <= '9') {
                 handleNumber(buttonValue); // Handles input of numbers
             } else if (buttonValue === 'C') {
