@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
             if (currentInput === '13') {
-                window.location.href = 'https://www.youtube.com/shorts/xZCHSJQOj8M'; // Redirects to the specified URL if 666 is entered
+                window.location.href = 'https://www.youtube.com/shorts/VlNrwSA98ZI'; // Redirects to the specified URL if 666 is entered
                 return;
             }
             if (buttonValue >= '0' && buttonValue <= '9') {
